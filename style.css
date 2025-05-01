@@ -7,6 +7,9 @@
     background-color: rgba(0, 0, 0, 0.527);
     position: fixed;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
 }
 .head-image a{
     color: white;
@@ -18,12 +21,6 @@
 .head-image a:hover{
     color: orange;
     transition: 0.5s;
-}
-.head-image{
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    
 }
 .option{
     display: flex;
@@ -289,7 +286,27 @@
     color: orange;
     transition: 0.3s;
 }
-@media(max-width: 610px) {
+@media(max-width: 670px) {
+    .head-image{
+        background-color: rgba(0, 0, 0, 0.527);
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        height: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .display{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 7%;
+        margin-bottom: 10px;
+    }
     .head-image a{
         font-size: 10px;
         margin-left: -20px;
@@ -356,9 +373,10 @@
         justify-content: center;
     }
     .viewall-bg{
-        width: 16%;
+        width: 20%;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        
     }
     .viewall-bg a{
         letter-spacing: normal;
@@ -372,13 +390,16 @@
         letter-spacing: 10px;
         margin-left: 10px;
     }
+    .option{
+        margin-left: -1%;
+    }
     .option a{
         flex-wrap: wrap;
         align-content: center;
         text-decoration: none;
         color: white;
         letter-spacing: normal;
-        margin-left: -10px;
+        margin-left: -2%;
     }
     .footer img{
         width: 20px;
